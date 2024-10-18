@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm35fikq2tpsb"]
+
+[ext_resource type="Script" path="res://enemy/enemy.gd" id="1_mgu2o"]
+[ext_resource type="Texture2D" uid="uid://dsurt30ke5wjm" path="res://enemy/RedBlock/square2.png" id="1_w0fpw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_twpug"]
+size = Vector2(18, 18)
+
+[node name="RedBlock" type="CharacterBody2D"]
+script = ExtResource("1_mgu2o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_w0fpw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_twpug")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_twpug")

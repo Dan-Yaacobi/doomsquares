@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://c13vdvi1klbbe"]
+
+[ext_resource type="Texture2D" uid="uid://bqgltfh5fx85c" path="res://Ball/balls.png" id="1_0et07"]
+[ext_resource type="Script" path="res://Ball/shot.gd" id="1_47d67"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1yr68"]
+atlas = ExtResource("1_0et07")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8iel2"]
+radius = 4.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ju522"]
+radius = 5.0
+
+[node name="Shot" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 2
+motion_mode = 1
+script = ExtResource("1_47d67")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_1yr68")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_8iel2")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_ju522")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]

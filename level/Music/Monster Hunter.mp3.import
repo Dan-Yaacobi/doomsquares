@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://u10h65myo2ch"
+path="res://.godot/imported/Monster Hunter.mp3-6a8a482d7fe2d022275e624501418ae7.mp3str"
+
+[deps]
+
+source_file="res://level/Music/Monster Hunter.mp3"
+dest_files=["res://.godot/imported/Monster Hunter.mp3-6a8a482d7fe2d022275e624501418ae7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,117 @@
+[gd_scene load_steps=9 format=3 uid="uid://cko65dnw6l5vx"]
+
+[ext_resource type="Script" path="res://Start Menu/how_to_play.gd" id="1_lu88o"]
+[ext_resource type="Texture2D" uid="uid://b1j5esq6gluyg" path="res://Start Menu/DALL·E 2024-10-18 01.30.38 - A pixel art background of a dark, minimal cityscape fused with surreal hellish elements. The scene features empty streets with subtle reflections, as .webp" id="1_qcxq1"]
+[ext_resource type="Texture2D" uid="uid://cqspxk5mx6f76" path="res://Start Menu/booster1.png" id="2_srtxn"]
+[ext_resource type="Texture2D" uid="uid://dqnrfnolqag6j" path="res://Start Menu/booster2.png" id="4_nvkqr"]
+[ext_resource type="Texture2D" uid="uid://lb3qblmbyp44" path="res://Start Menu/booster3.png" id="5_abv4k"]
+[ext_resource type="Texture2D" uid="uid://cq3y03jsw38lc" path="res://Start Menu/booster4.png" id="6_p6f5a"]
+[ext_resource type="Texture2D" uid="uid://budoinakowdvr" path="res://Start Menu/booster5.png" id="7_6g81m"]
+[ext_resource type="Texture2D" uid="uid://g168dpswxn2" path="res://Start Menu/booster6.png" id="8_hf3ad"]
+
+[node name="HowToPlay" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lu88o")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 134.0
+offset_top = 12.0
+offset_right = 1071.0
+offset_bottom = 225.0
+theme_override_font_sizes/font_size = 50
+text = "Move left: A, Left Arrow Key
+Move right: D, Right Arrow Key
+Shoot: W, Spacebar, Left Mouse Button"
+
+[node name="ColorRect" type="ColorRect" parent="Label"]
+z_index = -1
+layout_mode = 0
+offset_right = 947.0
+offset_bottom = 216.0
+color = Color(1, 0.0980392, 0.0980392, 0.529412)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(576, 324)
+scale = Vector2(1.125, 0.632813)
+texture = ExtResource("1_qcxq1")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 131.0
+offset_top = 300.0
+offset_right = 221.0
+offset_bottom = 390.0
+icon = ExtResource("2_srtxn")
+expand_icon = true
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 300.0
+offset_right = 387.0
+offset_bottom = 390.0
+icon = ExtResource("4_nvkqr")
+expand_icon = true
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 454.0
+offset_top = 300.0
+offset_right = 544.0
+offset_bottom = 390.0
+icon = ExtResource("5_abv4k")
+expand_icon = true
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 625.0
+offset_top = 300.0
+offset_right = 715.0
+offset_bottom = 390.0
+icon = ExtResource("6_p6f5a")
+expand_icon = true
+
+[node name="Button5" type="Button" parent="."]
+layout_mode = 0
+offset_left = 814.0
+offset_top = 300.0
+offset_right = 904.0
+offset_bottom = 390.0
+icon = ExtResource("7_6g81m")
+expand_icon = true
+
+[node name="Button6" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1000.0
+offset_top = 298.0
+offset_right = 1090.0
+offset_bottom = 388.0
+icon = ExtResource("8_hf3ad")
+expand_icon = true
+
+[node name="BoostText" type="Label" parent="."]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 474.0
+offset_right = 931.0
+offset_bottom = 620.0
+theme_override_font_sizes/font_size = 50
+autowrap_mode = 2
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 567.0
+offset_right = 160.0
+offset_bottom = 630.0
+theme_override_font_sizes/font_size = 40
+text = "Menu
+"
+autowrap_mode = 2

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpc54t2jyx6gr"]
+
+[ext_resource type="Script" path="res://enemy/spawn_point.gd" id="1_sbbyj"]
+[ext_resource type="Texture2D" uid="uid://dsurt30ke5wjm" path="res://enemy/RedBlock/square2.png" id="2_n0f2f"]
+
+[node name="SpawnPoint" type="Node2D"]
+script = ExtResource("1_sbbyj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_n0f2f")
