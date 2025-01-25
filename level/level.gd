@@ -51,8 +51,6 @@ func update_position(_position: Vector2) -> void:
 		spawn_point.global_position = _position
 		if BoostManager.summon_speed > 0.001:
 			BoostManager.summon_speed *= 0.99
-			if boost_summon > 5.0:
-				boost_summon -= 0.01
 
 func summon_enemies() -> void:
 	can_summon = false

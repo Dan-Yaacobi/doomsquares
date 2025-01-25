@@ -23,6 +23,7 @@ func _process(delta: float) -> void:
 			player_position = player.global_position
 	else:
 		remove_player_instance()
+		
 func add_player_instance() -> void:
 	player = PLAYER.instantiate()
 	get_tree().root.add_child.call_deferred(player)
